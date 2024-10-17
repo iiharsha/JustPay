@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 10px 20px;
+}
+.navbar .logo {
+  margin-right: auto;
+  display: none;
+}
+.navbar .search-bar,
+.navbar .user {
+  display: flex;
+  align-items: center;
+}
+.navbar .search-bar {
+  border: solid 1px var(--border);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.navbar .user {
+  gap: 20px;
+}
+.navbar .menu-btn {
+  display: none;
+}
+
+/* navbar responsive code  */
+@media only screen and (max-width: 1180px) {
+  .navbar {
+    position: sticky;
+    top: o;
+    left: o;
+    z-index: 90;
+    background: var(--ui-base);
+  }
+  .navbar .logo,
+  .navbar .menu-btn {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .navbar .search-bar {
+    display: none;
+  }
+}
